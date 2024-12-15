@@ -1,0 +1,120 @@
+/* Navbar Css*/
+nav{
+    background: var(--color-text);
+    color: var(--color-primary) !important;
+}
+.logo{
+    color: var(--color-primary);
+    padding: 1rem 0;
+}
+.logo div:first-child{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1;
+}
+.logo div:first-child{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1;
+}
+.logo div:first-child span{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--color-secondary);
+}
+.logo div:last-child{
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: .7rem;
+    letter-spacing: .12rem;
+    color: #999;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .navlist{
+    display: flex;
+}
+nav .navlist li{
+    text-transform: uppercase;
+    font-size: .9rem;
+    cursor: pointer;
+    z-index: 111;
+}
+nav .navlist li a{
+    color: var(--color-primary);
+    padding: 2rem;
+    position: relative;
+}
+.navlist li a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--color-secondary);
+    height: 0%;
+    width: 100%;
+    border-bottom: .2rem solid var(--color-primary);
+    z-index: -1;
+    transition: var(--transition);
+    opacity: 0;
+    visibility: hidden;
+}
+.navlist li a:hover::before,
+.navlist li a.active::before{
+    height: 95%;
+    opacity: 1;
+    visibility: visible;
+}
+.menu-btn .lnr{
+    font-size: 1.1rem;
+    display: none;
+}
+.nav-icons{
+    display: flex;
+    gap: 2rem;
+}
+.nav-icons .lnr{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.nav-icons .lnr:hover{
+    color: var(--color-secondary);
+}
+
+
+@media (max-width:1050px){
+    .menu-btn .lnr{
+      display: block;
+    }
+    nav .navlist{
+      flex-direction: column;
+      position: absolute;
+      top: 4.7rem;
+      right: 5rem;
+      width: 22rem;
+      background: var(--color-text);
+      display: none;
+      opacity: 0;
+      z-index: 11;
+      transition: var(--transition);
+    }
+    nav .navlist.active{
+      display: flex;
+      opacity: 1;
+      top: 4.7rem;
+    }
+    nav .navlist li a{
+        display: inline-block;
+        width: 100%;
+        padding: 1rem 0;
+        text-align: center;
+    }
+    
+  }

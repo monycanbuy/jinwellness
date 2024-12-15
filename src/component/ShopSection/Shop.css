@@ -1,0 +1,74 @@
+.shop{
+    background: url(../../assets/images/section1.png);
+    margin-top: 3rem;
+    padding: 3rem 0;
+}
+.shop .swiper-slide{
+    margin-bottom: 2rem;
+}
+.shop .swiper-slide .box{
+    text-align: center;
+}
+.shop .swiper-slide .image{
+    padding: 1rem .2rem 2rem;
+    background: var(--color-primary);
+    position: relative;
+}
+.shop .image img{
+    height: 266px;
+    width: 266px;
+    padding: 2rem;
+    margin: auto;
+}
+.shop .swiper-slide .add{
+    position: absolute;
+    bottom: -3rem;
+    left: 0;
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+    transition: var(--transition);
+    opacity: 0;
+    visibility: hidden;
+}
+.shop .swiper-slide .add .lnr{
+    padding: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.shop .swiper-slide .info{
+    padding: 2rem 1rem 2rem;
+    z-index: 1;
+    transition: var(--transition);
+    position: relative;
+    top: -1rem;
+}
+.shop .swiper-slide .info p{
+    color: var(--color-tertiary);
+    font-size: 1.1rem;
+}
+.shop .swiper-slide .info h4{
+    font-weight: 300;
+}
+.shop .swiper-slide .info span{
+    color: var(--color-tertiary);
+    font-size: 1rem;
+}
+.shop .swiper-slide:hover .add{
+    opacity: 1;
+    visibility: visible;
+    bottom: -1rem;
+}
+.shop .swiper-slide .add .lnr:hover{
+    color: var(--color-secondary);
+    background: var(--color-primary);
+}
+.shop .swiper-slide:hover .info{
+    box-shadow: var(--shadow);
+    background: var(--color-primary);
+    top: 0;
+}

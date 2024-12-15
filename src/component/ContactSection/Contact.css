@@ -1,0 +1,73 @@
+.contact{
+    background: #fcfafc;
+}
+.contact-container .title{
+    text-align: start;
+}
+.contact-container{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.contact-container .left{
+    width: calc(60% - 2rem);
+}
+.contact-container .right{
+    width: calc(40% - 2rem);
+}
+.contact-form .form-name{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+.contact-container .contact-form input,
+.contact-container .contact-form textarea{
+    border: .1rem solid var(--color-secondary);
+    width: 100%;
+    padding: 1rem;
+    margin: .5rem 0;
+}
+.contact-container .contact-form .btn{
+    position: relative;
+    padding: 1.5rem;
+    cursor: pointer;
+    z-index: 11;
+    border: .1rem solid var(--color-secondary);
+    background: none;
+    transition: var(--transition);
+}
+.contact-form .btn span{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--color-secondary);
+    height: 0;
+    width: 100%;
+    border-bottom: .2rem solid var(--color-text);
+    transition: var(--transition);
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+}
+.contact-form .btn:hover span{
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+.contact-form .btn:hover{
+    color: var(--color-primary);
+}
+.contact-container .right p{
+    margin: 1rem 0;
+}
+.contact-container .right span{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+@media (max-width:824px){
+    .contact-container .col{
+        width: 100%;
+    }
+}

@@ -1,0 +1,78 @@
+.about-container .right{
+    position: relative;
+}
+.about-container .right::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -3rem;
+    right: -9rem;
+    background: url(../../assets/images/dots.png) no-repeat;
+    z-index: 1;
+}
+.about-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.about-container .left{
+    background: url(../../assets/images/about.png) no-repeat;
+    max-height: 120vh;
+    width: 100%;
+    background-position:center;
+    z-index: 11;
+    position: relative;
+}
+.about-container .left .content{
+    position: absolute;
+    top: 33%;
+    left: 8.8rem;
+    max-width: 19rem;
+}
+.about-container .title{
+    text-align: left;
+    margin-bottom: 0;
+}
+.about-container .title h2{
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+.about-container .left h2::before{
+    top: -1.2rem;
+}
+.about-container .content p{
+    color: var(--color-tertiary);
+}
+.about-container .btn{
+    background: none;
+    color: var(--color-secondary);
+    font-size: .9rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.about-container .right .image{
+    position: relative;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: -9rem;
+    z-index: 11;
+}
+.about-container .right .image .img{
+    border-radius: 5rem;
+    max-width: 500px;
+    box-shadow: var(--shadow);
+}
+
+@media (max-width:824px){
+    .title h2{
+        font-size: 2.7rem;
+    }
+    .about-container{
+        grid-template-columns: 1fr;
+    }
+    .about-container .left{
+        height: 100vh;
+    }
+    
+}

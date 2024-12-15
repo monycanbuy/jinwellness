@@ -1,0 +1,16 @@
+.copyright{
+    background: var(--color-text);
+    color: var(--color-primary);
+    text-align: center;
+    padding: 1rem;
+}
+.copyright p{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.copyright p .fa-heart{
+    color: var(--color-secondary);
+}
+.copyright p a{
+    color: var(--color-primary);
+}

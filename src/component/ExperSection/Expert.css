@@ -1,0 +1,99 @@
+.experts-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.experts .box .image{
+    position: relative;
+    width: calc(100% - 2rem);
+}
+.experts .box .image img{
+    filter:grayscale(1);
+}
+.experts .image span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .8);
+    height: 100%;
+    width: 100%;
+    transition: var(--transition);
+    visibility: hidden;
+    opacity: 0;
+}
+.experts .box:hover .image span{
+    visibility: visible;
+    opacity: 1;
+}
+.experts .box:hover img{
+    filter: grayscale(0);
+}
+.experts .image .social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: var(--transition);
+}
+.experts .image .social i{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.experts .box:hover .social{
+    opacity: 1;
+    bottom: 20%;
+}
+.experts .image .social i:hover{
+    color: var(--color-primary);
+    background: var(--color-secondary);
+}
+.experts .box .info{
+    padding: 1rem;
+    background: #eee;
+    border: .5rem solid var(--color-primary);
+    width: calc(100% - 2rem);
+    position: relative;
+    top: -2rem;
+    left: 3.3rem;
+    text-align: center;
+    transition: var(--transition);
+}
+.experts .box .info h3{
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.experts .box .info span{
+    color: var(--color-tertiary);
+    font-size: 1.1rem;
+}
+.experts .box:hover .info{
+    top: 1rem;
+}
+.experts .box:hover .info h3{
+    color: var(--color-secondary);
+}
+@media (max-width:1050px){
+    .experts-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width:824px){
+    .experts-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:660px){
+    .experts-container{
+        grid-template-columns: 1fr;
+    }
+}
