@@ -18,17 +18,33 @@ function App() {
 
   return (
     <>
-    <NavBar/>
-    <HeroSliderSection/>
-    <About/>
-    <Service/>
-    <Shop/>
-    <Testimonial/>
-    <Expert/>
-    <Blog/>
-    <Contact/>
-    <Footer/>
-    <Copyright/>
+    <NavBar />
+      <div id="home">
+        <HeroSliderSection />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="service">
+        <Service />
+      </div>
+      <div id="shop">
+        <Shop />
+      </div>
+      <div id="testimonial">
+        <Testimonial />
+      </div>
+      <div id="expert">
+        <Expert />
+      </div>
+      <div id="blog">
+        <Blog />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
+      <Footer />
+      <Copyright />
     </>
   )
 }

@@ -65,6 +65,9 @@
     font-weight: 500;
     font-size: 1.1rem;
 }
+span .fa-whatsapp{
+    color: var(--color-secondary);
+}
 
 @media (max-width:824px){
     .contact-container .col{

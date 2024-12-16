@@ -43,11 +43,14 @@ const Contact = () => {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At in soluta aut harum fugit, libero sunt aliquam obcaecati laudantium rem impedit omnis ut!</p>
-            <span>Tel: +2347054032321
-                Email:jinwellnessspa@gmail.com
-                Address:5B Wole Ariyo St, off Admiralty Way, Lekki Phase 1, Lagos 100001, Lagos
-            </span>
+                  <span>
+                      Tel: <a href="tel:+23497700332">+23497700332</a> | <i className="fa-brands fa-whatsapp">-</i> 
+                      <a href="https://wa.me/2348099400722" target="_blank" rel="noopener noreferrer">
+                           Chat on WhatsApp
+                      </a><br />
+                      Email: <a href="mailto:jinwellnessspa@gmail.com">jinwellnessspa@gmail.com</a><br />
+                      Address: 5B Wole Ariyo St, off Admiralty Way, Lekki Phase 1, Lagos 100001, Lagos
+                  </span>
             </div>
         </div>
     </section>

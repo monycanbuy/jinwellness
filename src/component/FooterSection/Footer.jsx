@@ -4,6 +4,14 @@ import './Footer.css'
 
 const Footer = () => {
 
+  const handleScroll = (e, sectionId) => {
+    e.preventDefault();
+    const section = document.querySelector(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
     useEffect(() => {
         const sr = ScrollReveal({
           distance: '60px',
@@ -27,11 +35,12 @@ const Footer = () => {
               <div className="box">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Privacy Ploicy</a></li>
-                    <li><a href="">Terms & Conditions</a></li>
-                    <li><a href="">Bookings</a></li> 
-                    <li><a href="">Discounts</a></li>
+                    <li><a href="" onClick={(e) => handleScroll(e, '#home')}>Home</a></li>
+                    <li><a href="" onClick={(e) => handleScroll(e, '#about')}>About</a></li>
+                    <li><a href="" onClick={(e) => handleScroll(e, '#service')}>Services</a></li>
+                    <li><a href="" onClick={(e) => handleScroll(e, '#shop')}>Shop</a></li>
+                    <li><a href="" onClick={(e) => handleScroll(e, '#blog')}>Blog</a></li>
+                    <li><a href="" onClick={(e) => handleScroll(e, '#contact')}>Contact</a></li> 
                 </ul>
               </div>
               <div className="box">

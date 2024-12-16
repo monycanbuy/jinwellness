@@ -9,6 +9,14 @@ const NavBar = () => {
     setIsNavVisible(!isNavVisible);
   };
 
+  const handleScroll = (e, sectionId) => {
+    e.preventDefault();
+    const section = document.querySelector(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
 
   useEffect(() => {
     // Initialize ScrollReveal only after component mounts
@@ -22,7 +30,6 @@ const NavBar = () => {
     // Apply ScrollReveal to NavBar-specific elements
     sr.reveal('.nav-container .logo', { delay: 200, origin: 'left' });
     sr.reveal('.navlist li', { delay: 300, origin: 'top', interval: 200 });
-    // sr.reveal('.nav-icons span', { delay: 400, origin: 'bottom', interval: 200 });
   }, []); // Empty dependency array ensures this runs only once
 
   return (
@@ -36,19 +43,22 @@ const NavBar = () => {
         </a>
         <ul className={`navlist ${isNavVisible ? 'active' : ''}`}>
           <li>
-            <a href="#home" className="active">home</a>
+            <a href="#home" onClick={(e) => handleScroll(e, '#home')} className="active">home</a>
           </li>
           <li>
-            <a href="#about">about</a>
+            <a href="#about" onClick={(e) => handleScroll(e, '#about')}>about</a>
           </li>
           <li>
-            <a href="#service">service</a>
+            <a href="#service" onClick={(e) => handleScroll(e, '#service')}>service</a>
           </li>
           <li>
-            <a href="#shop">shop</a>
+            <a href="#shop" onClick={(e) => handleScroll(e, '#shop')}>shop</a>
           </li>
           <li>
-            <a href="#contact">contact</a>
+            <a href="#blog" onClick={(e) => handleScroll(e, '#blog')}>blog</a>
+          </li>
+          <li>
+            <a href="#contact" onClick={(e) => handleScroll(e, '#contact')}>contact</a>
           </li>
         </ul>
         <div className="nav-icons">
