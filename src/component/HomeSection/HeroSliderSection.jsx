@@ -27,8 +27,8 @@ const HeroSliderSection = () => {
         >
           <SwiperSlide className="swiper-slide slide1">
             <div className="content">
-              <h1>We give the best body treatment</h1>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim quos soluta quisquam cumque! Dolorem reiciendis fuga, harum aperiam enim quis incidunt quae magnam!</p>
+              <h1>Relax, Rejuvenate, Restore</h1>
+              <p>Experience the perfect escape with our soothing massages that melt away stress and tension.</p>
               <form action="" className="home-search">
                 <input type="text" name="search" placeholder="search here" />
                 <button type="submit" className="btn">
@@ -39,8 +39,8 @@ const HeroSliderSection = () => {
           </SwiperSlide>
           <SwiperSlide className="swiper-slide slide2">
             <div className="content">
-              <h1>We give body massage in town</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error, provident explicabo nihil modi iste libero delectus, quod odit corrupti sed eius sint sit perferendis! Deserunt beatae eligendi iure vero distinctio nam odio.</p>
+              <h1>Your Path to Ultimate Relaxation</h1>
+              <p>Indulge in expert massage therapies designed to heal your body and calm your mind.</p>
               <form action="" className="home-search">
                 <input type="text" name="search" placeholder="search here" />
                 <button type="submit" className="btn">

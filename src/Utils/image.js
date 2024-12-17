@@ -31,11 +31,12 @@ import nservice1 from '../assets/images/nservice1.jpg';
 import nservice2 from '../assets/images/nservice2.jpg';
 import nservice3 from '../assets/images/nservice3.jpg';
 import nservice4 from '../assets/images/nservice4.png';
+import logos from '../assets/logo/jinwellnesLogo.jpg';
 
 
 export const iconsImgs ={
     about,about2,dots,service1,service2,service3,service4,shop1,shop2,shop3,shop4,
     quote,user1,user2,user3,expert1,expert2,expert3,expert4,blog1,blog2,blog3
     ,blog4,nbg1,nbg2,nexpert1,nexpert2,nexpert3,nexpert4,nservice1,nservice2,
-    nservice3,nservice4
+    nservice3,nservice4,logos
 }
