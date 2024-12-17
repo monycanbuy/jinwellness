@@ -30,7 +30,7 @@ const About = () => {
             </div>
             <div className="right">
                 <div className="image">
-                    <img src={iconsImgs.about2}/>
+                    <img src={iconsImgs.logos}/>
                 </div>
             </div>
         </div>
