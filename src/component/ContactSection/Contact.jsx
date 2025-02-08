@@ -93,7 +93,7 @@ const Contact = () => {
             Tel:{' '}
             <a href="tel:+2348136962412">+2348136962412</a> |{' '}
             <i className="fa-brands fa-whatsapp">-</i>
-            <a href="https://wa.me/2348099400722" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/2348099400722" className='whatsap' target="_blank" rel="noopener noreferrer">
               Chat on WhatsApp
             </a>
             <br />
